@@ -1,0 +1,143 @@
+@font-face {
+  font-family: Sketch;
+  src: url(Sketch\ Gothic\ School.ttf);
+}
+
+body {
+  background-color: #666666;
+  font-family: Sketch, sans-serif;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+}
+.card {
+  margin: 18px;
+  width: 15rem;
+  height: 25vh;
+  padding: 15px;
+  box-shadow: 0px 12px 28px -10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 12px 28px -10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.yellow {
+  background: linear-gradient(190deg, #ffffd2 0%, #afb4a2 100%);
+  position: relative;
+  animation-name: fromTop;
+  animation-duration: 3s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+@keyframes fromTop {
+  from {
+    top: -600px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.green {
+  background: linear-gradient(180deg, #d7fed3 0%, #a2b4a3 100%);
+  position: relative;
+  animation-name: delayFromTop;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes delayFromTop {
+  from {
+    top: -700px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.violet {
+  background: linear-gradient(180deg, #cccbf7 0%, #8b8c9a 100%);
+  position: relative;
+  animation-name: delayFromTop2;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes delayFromTop2 {
+  from {
+    top: -600px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.post {
+  position: relative;
+  animation-name: delayFromTop3;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes delayFromTop3 {
+  from {
+    top: -1300px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.text p {
+  text-align: center;
+  font-size: 2rem;
+}
+.text h3 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.sx {
+  transform: rotate(-7deg);
+  transition: 1s all ease;
+  color: blue;
+}
+
+.dx {
+  transform: rotate(5deg);
+  transition: 1s all ease;
+  color: #980260;
+}
+.sx2 {
+  transform: rotate(-2deg);
+  transition: 1s all ease;
+  color: darkgreen;
+}
+.dx2 {
+  transform: rotate(2deg);
+  transition: 1s all ease;
+  color: chocolate;
+}
+.down {
+  /* transform: rotate(50deg) translate(0, 80px); */
+  transition: 1s all ease;
+}
+.down:hover {
+  transform: rotate(50deg) translate(0, 80px);
+  animation-iteration-count: 6;
+}
+.sx:hover,
+.dx:hover,
+.sx2:hover,
+.dx2:hover {
+  scale: 1.3;
+  z-index: 2;
+  transform: rotate(0deg);
+  box-shadow: 0px 12px 28px -10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 12px 28px -10px rgba(0, 0, 0, 0.722);
+}
